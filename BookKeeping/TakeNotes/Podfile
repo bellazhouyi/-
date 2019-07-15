@@ -1,0 +1,12 @@
+platform :ios,'10.0'
+target 'TakeNotes' do
+
+pod 'Masonry'
+pod 'IQKeyboardManager'
+pod 'LYEmptyView'
+
+pod 'AFNetworking'
+pod 'SVProgressHUD'
+
+
+end

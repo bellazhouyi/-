@@ -1,0 +1,53 @@
+//
+//  PrefixHeader.pch
+//  TakeNotes
+//
+//  Created by 航汇聚 on 2019/5/15.
+//  Copyright © 2019 BellaZhou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+@import UIKit;
+
+typedef NS_ENUM(NSInteger, MoneyBigType) {
+    MoneyBigType_income = 100,
+    MoneyBigType_outgoing
+};
+typedef NS_ENUM(NSInteger, MoneyIncomeType) {
+    MoneyIncomeType_salary = 0, //工资
+    MoneyIncomeType_award, //奖金
+    MoneyIncomeType_financing, //理财
+    MoneyIncomeType_partTime, //兼职
+    MoneyIncomeType_custom //自定义
+};
+typedef NS_ENUM(NSInteger, MoneyOutgoingType) {
+    MoneyOutgoingType_restaurant = 0, //餐饮
+    MoneyOutgoingType_travel, //交通
+    MoneyOutgoingType_entertainment, //娱乐
+    MoneyOutgoingType_lifePayment, //生活缴费
+    MoneyOutgoingType_dress, //服饰
+    MoneyOutgoingType_dailyUse, //日用
+    MoneyOutgoingType_sports, //运动
+    MoneyOutgoingType_fruitAndVegetable, //果蔬
+    MoneyOutgoingType_medicine, // 医药
+    MoneyOutgoingType_education, // 教育学习
+    MoneyOutgoingType_shopping, //购物
+    MoneyOutgoingType_beauty, //护肤美容
+    MoneyOutgoingType_snacks, //零食
+    MoneyOutgoingType_communication, //通讯
+    MoneyOutgoingType_humanRelationship, //人情来往
+    MoneyOutgoingType_house, //房屋
+    MoneyOutgoingType_custom //自定义
+};
+
+static NSString * const notification_fetchMoneyTable = @"notification_fetchMoneyTable";
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//颜色设定
+#define kColorWithRGB(r, g, b) [UIColor colorWithRed:(r) / 255.f green:(g) / 255.f blue:(b) / 255.f alpha:1.f]
+#define kColorWithRGBAndAlpha(r, g, b, a) [UIColor colorWithRed:(r) / 255.f green:(g) / 255.f blue:(b) / 255.f alpha:a]
+
+#define kDefaultCenter  [NSNotificationCenter defaultCenter]
+#define kStandardUserDefaults [NSUserDefaults standardUserDefaults]
+#endif /* PrefixHeader_pch */
